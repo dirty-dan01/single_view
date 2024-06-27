@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  const  time = new Date();
+  const day = time.toLocaleString("en-us", {weekday: "long"});
+  const morning = time.getHours() >= 6 && time.getHours() <= 12;
+  let dayMessage;
+
+  if (day.toLowerCase() === "monday") {
+    dayMessage = `Happy ${day}`;
+  }else if (day.toLowerCase() === "tuesday") {
+    dayMessage = dayMessage = `Happy ${day}`;
+  }else if (day.toLowerCase() === "wednesday") {
+    dayMessage = dayMessage = `Happy ${day}`;
+  }else if (day.toLowerCase() === "thursday") {
+    dayMessage = dayMessage = `Happy ${day}`;
+  }else if (day.toLowerCase() === "friday") {
+    dayMessage = dayMessage = `Happy ${day}`;
+  }else {
+    dayMessage = "Stay cool it's the weekday"
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{dayMessage}</h1>
+      {morning? <h2>Breakfast time</h2>: ""}
     </div>
   );
 }
