@@ -1,0 +1,24 @@
+/* General styling for the navbar container */
+nav {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px; /* Padding around the navbar */
+    display: flex;
+    justify-content: space-around; /* Space out the nav items */
+    align-items: center; /* Center items vertically */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Styling for the navigation links */
+  .navItem {
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding around the nav items */
+    border-radius: 5px; /* Rounded corners for nav items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Styling for hover effect on navigation links */
+  .navItem:hover {
+    background-color: #ddd; /* Slightly darker gray background on hover */
+  }
+  
